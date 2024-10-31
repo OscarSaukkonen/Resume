@@ -79,8 +79,8 @@
             padding: 1rem;
             border-radius: 8px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
-            0 6px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.15);
             transform-style: preserve-3d;
             transform: perspective(1000px) translateZ(0);
             transition: transform 0.3s;
@@ -88,7 +88,7 @@
         }
 
         .skill-card h3 {
-            font-size: 30px;
+            font-size: 27px;
         }
 
         .skill-card p {
@@ -111,8 +111,8 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
-            0 6px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.15);
             transform-style: preserve-3d;
             transform: perspective(1000px) translateZ(0);
         }
@@ -140,6 +140,33 @@
         .contact a:hover {
             color: #ff6b6b;
         }
+
+        
+        .traits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .trait-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            color: #ff3366;
+            margin-bottom: 0.5rem;
+        }
+
+        .trait-item p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
@@ -151,8 +178,35 @@
             <p>Creative Developer & Designer</p>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
+        <section id="professional-traits">
+            <h2>Professional Traits & Soft Skills</h2>
+            <div class="traits">
+                <div class="trait-item">
+                    <h3>Creative Problem Solver</h3>
+                    <p>Approach technical challenges with innovative solutions while maintaining practical functionality</p>
+                </div>
+                <div class="trait-item">
+                    <h3>Self-Directed Learner</h3>
+                    <p>Consistently acquire and master new technologies and methodologies independently</p>
+                </div>
+                <div class="trait-item">
+                    <h3>Entrepreneurial Mindset</h3>
+                    <p>Demonstrated ability to transform ideas into successful products</p>
+                </div>
+                <div class="trait-item">
+                    <h3>User-Focused</h3>
+                    <p>Strong emphasis on creating intuitive and engaging user experiences</p>
+                </div>
+                <div class="trait-item">
+                    <h3>Adaptable</h3>
+                    <p>Comfortable working across different technologies and frameworks as needed</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="technical skills">
+            <h2>Technical Skills</h2>
             <div class="skills">
                 <div class="skill-card">
                     <h3>Frontend Development</h3>
@@ -176,7 +230,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Languages</h3>
+                    <h3>Spoken and written languages</h3>
                     <div class="skill-content">
                         <p>Proficient: Finnish, English</p>
                     </div>
@@ -191,17 +245,23 @@
                     <h3>Lead Full Stack Developer - NodeJS, .NET Core, Angular, MySQL</h3>
                     <p style="font-style: italic;">gamblingbot.app - 2019-2023</p>
                     <br>
-                    <p style="font-weight: 600; font-size: 18px;">Founded and engineered an interactive web gaming experience that generated a community of 10,000+ monthly active users through organic growth.</p>
+                    <p style="font-weight: 600; font-size: 18px;">Founded and engineered an interactive web gaming
+                        experience that generated a community of 10,000+ monthly active users through organic growth.
+                    </p>
                     <br>
-                    <p>Developed and maintained Node.js, .Net Core and MySQL backend services hosted on AWS, handling over 1,000 requests per minute during peak traffic periods.</p>
-                    <p>Designed and implemented a frontend using Angular with integrated Stripe payment processing, supported by a .NET Core backend.</p>
+                    <p style="font-weight: 400; font-size: 18px;">Developed and maintained Node.js, .Net Core and MySQL
+                        backend services hosted on AWS, handling over 1,000 requests per minute during peak traffic
+                        periods.</p>
+                    <p style="font-weight: 400; font-size: 18px;">Designed and implemented a frontend using Angular with
+                        integrated Stripe payment processing, supported by a .NET Core backend.</p>
                 </div>
                 <div class="timeline-item">
                     <h3>Frontend Developer - Angular</h3>
                     <p style="font-style: italic;">Basware - 2019</p>
                     <br>
                     <p style="font-weight: 600; font-size: 18px;">Internship and later summer job.</p>
-                    <p>Refactored and developed the Angular frontend for the product feature release page to improve functionality and user experience.</p>
+                    <p>Refactored and developed the Angular frontend for the product feature release page to improve
+                        functionality and user experience.</p>
                 </div>
             </div>
         </section>
